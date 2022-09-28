@@ -1,0 +1,50 @@
+.footer-main{
+background-color: rgb(236, 243, 241);
+margin: auto;
+text-align: left;
+color: rgb(102, 100, 100);
+padding-bottom: 70px;
+}
+
+.first-child-footer{
+    width:85% ;
+    margin: auto;
+}
+
+.middle-box{
+    display: grid;
+    width: 85%;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.main-text{
+    color: black;
+}
+
+.lower-box{
+    display: grid;
+    width: 85%;
+    grid-template-columns: repeat(3,1fr);
+    justify-content:space-between;
+    margin: auto;
+    margin-top: 70px;
+    
+}
+
+.social-media{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    justify-content: space-between;
+    margin: auto;
+    color:gray;
+
+    align-items: center;
+    gap:15px
+}
+
+a{color: rgb(66, 64, 64);
+    text-decoration: none;
+}
