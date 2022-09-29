@@ -4,7 +4,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Homepage from './Pages/Homepage';
 
 import Footer from './footer/Footer';
-
+import Electronics from 
 
 function App() {
   return (
