@@ -3,7 +3,7 @@ import { Stack, Image, Select, Input, Text, Flex, Box } from "@chakra-ui/react";
 import "./Navbar.css";
 import { BsSearch, BsCart3 } from "react-icons/bs";
 import styled from "styled-components";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import rentomojopic from "../../Assest/rentomojologo.png"
 import Login from "../Login/Login";
 
@@ -105,9 +105,12 @@ const Navbar = () => {
           </Text>
         </Flex>
         <BsCart3 />
+        <Link to="/cart">
+        
         <Text display={{ base: "none", md: "none", lg: "inline-flex" }}>
           Cart
         </Text>
+        </Link>
       </Stack>
       <Login />
     </Flex>
