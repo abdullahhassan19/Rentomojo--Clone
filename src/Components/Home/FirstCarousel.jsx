@@ -1,41 +1,37 @@
 import React from "react";
 import { Box, IconButton, useBreakpointValue } from "@chakra-ui/react";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
-import {IoIosArrowDroprightCircle} from "@reacticons/ionicons"
+import { IoIosArrowDroprightCircle } from "@reacticons/ionicons";
 import Slider from "react-slick";
 
 const settings = {
-    dots: true,
-    arrows: false,
-    slide: true,
-    infinite: true,
-    autoplay: true,
-    speed: 500,
-    autoplaySpeed: 4000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
+  dots: true,
+  arrows: false,
+  slide: true,
+  infinite: true,
+  autoplay: true,
+  speed: 500,
+  autoplaySpeed: 4000,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+};
 //   .....above is slider setting..........
 
+export default function Firstcarousel() {
+  const [slider, setSlider] = React.useState(0);
 
+  const top = useBreakpointValue({ base: "90%", md: "50%" });
+  const side = useBreakpointValue({ base: "30%", md: "10px" });
 
-
-export default function Firstcarousel(){
-
-    const [slider, setSlider] = React.useState(0);
-
-    const top = useBreakpointValue({ base: "90%", md: "50%" });
-    const side = useBreakpointValue({ base: "30%", md: "10px" });
-
-    const cards = [
-        "https://user-images.githubusercontent.com/101388860/192748921-dea0e4b6-85ee-4f78-9375-91f9af9304bd.png",
-        "https://s.rmjo.in/Paytm-Bank-.png",
-        "https://s.rmjo.in/WP-Web.png",
-      ];
-    return(
-        <Box
+  const cards = [
+    "https://user-images.githubusercontent.com/101388860/192748921-dea0e4b6-85ee-4f78-9375-91f9af9304bd.png",
+    "https://s.rmjo.in/Paytm-Bank-.png",
+    "https://s.rmjo.in/WP-Web.png",
+  ];
+  return (
+    <Box
       position={"relative"}
-      height={{base:"270px",md:"300px",lg:"470px"}}
+      height={{ base: "270px", md: "300px", lg: "470px" }}
       width={"73.5%"}
       overflow={"hidden"}
       // border={"1px solid black"}
@@ -43,8 +39,10 @@ export default function Firstcarousel(){
       margin={"auto"}
       marginTop={{base:"-80px",md:"-60px",lg:"6px"}}
       backgroundColor={"#d4e0e9"} 
+      // marginTop={{ base: "-140px", md: "-60px", lg: "100px" }}
+      // backgroundColor={"#d4e0e9"}
     >
-         <link
+      <link
         rel="stylesheet"
         type="text/css"
         charSet="UTF-8"
@@ -56,7 +54,7 @@ export default function Firstcarousel(){
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
       />
 
-<IconButton
+      <IconButton
         aria-label="left-arrow"
         colorScheme="gray"
         borderRadius="full"
@@ -84,7 +82,11 @@ export default function Firstcarousel(){
         <BsChevronRight />
       </IconButton>
       {/* Slider */}
-      <Slider {...settings} ref={(slider) => setSlider(slider)} borderRadius="md">
+      <Slider
+        {...settings}
+        ref={(slider) => setSlider(slider)}
+        borderRadius="md"
+      >
         {cards.map((url, index) => (
           <Box
             key={index}
@@ -98,10 +100,18 @@ export default function Firstcarousel(){
           />
         ))}
       </Slider>
-      <Box backgroundColor={"#d4e0e9"} display={"flex"}  height={"50px"} width={"full"}>
-          <p style={{fontSize:"12px",marginTop:"8px",margin:"auto"}}>Safety precautions during COVID-19. We’re taking additional steps and precautionary measures to protect our community from COVID-19. </p>
-   
+      <Box
+        backgroundColor={"#d4e0e9"}
+        display={"flex"}
+        height={"50px"}
+        width={"full"}
+      >
+        <p style={{ fontSize: "12px", marginTop: "8px", margin: "auto" }}>
+          Safety precautions during COVID-19. We’re taking additional steps and
+          precautionary measures to protect our community from COVID-19.{" "}
+        </p>
       </Box>
+      
     </Box>
-    )
+  );
 }
