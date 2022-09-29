@@ -11,6 +11,8 @@ function App() {
     <div className="App">
      <Navbar/>
      <Homepage/>
+     
+     <button style={{border:"2px solid black" }}>Package</button>
     <Footer/>
     
     </div>

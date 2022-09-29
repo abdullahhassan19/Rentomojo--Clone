@@ -1,0 +1,17 @@
+.header {
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    line-height: 1.4;
+    font-size: large;
+    text-align:start;
+    margin-left: 215px;
+}
+hr {
+    height:2px; 
+    width:5%; 
+    border-width:0; 
+    color:red; 
+    background-color:red;
+    justify-content: end;
+    margin-left: 3px;
+}
