@@ -41,7 +41,7 @@ export default function Firstcarousel(){
       // border={"1px solid black"}
       borderRadius={"30px"}
       margin={"auto"}
-      marginTop={{base:"-140px",md:"-60px",lg:"100px"}}
+      marginTop={{base:"-80px",md:"-60px",lg:"6px"}}
       backgroundColor={"#d4e0e9"} 
     >
          <link
