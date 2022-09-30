@@ -204,8 +204,8 @@ const CardCarousel = () => {
       visibleSlides={4}
       step={1}
     >
-      <div classname="cor2upperdiv"style={{display:"flex" }}>
-        <div class="rm-main-head">
+      <div className="cor2upperdiv"style={{display:"flex" }}>
+        <div className="rm-main-head">
           You'll love to
           <span style={{borderBottom:"3px solid red",marginLeft:"30px"}}>take <span style={{borderBottom:"5px solid white"}}>these home</span></span>
         </div>
@@ -225,6 +225,7 @@ const CardCarousel = () => {
         <StyledSlider classNameAnimation="animating">
           {data.map((item, index) => (
             <StyledSlide
+            key={index}
               index={index}
               classNameHidden="hidden"
               classNameVisible="visible"
