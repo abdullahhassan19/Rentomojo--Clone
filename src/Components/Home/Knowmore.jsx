@@ -5,11 +5,12 @@ import styles from "../Home/Knowmore.module.css";
 export const Knowmore = () => {
   return (
     <>
-      <Container minWidth="90%" style={{}} >
 
+      {/* <Container minWidth="90%" style={{}} > */}
+      <Container minWidth="90%" >
         <br/>
         <br/>
-        <Box>
+        <Box >
           <Text
             fontSize={{
               sm: "16px",
@@ -19,13 +20,15 @@ export const Knowmore = () => {
               base: "14px"
             }}
             style={{
-              textAlign: "left"
+              textAlign: "left",
+              marginTop:"80px"
              
             }}
             padding="10px"
             marginLeft="30px"
+            
           >
-            There's more
+          <div>There's more</div>
           </Text>
         </Box>
         <Box
@@ -43,13 +46,14 @@ export const Knowmore = () => {
             }}
             padding="10px"
             marginLeft="30px"
-            marginTop="-18px"
+            marginTop="-25px"
           >
-            to renting
+         
+            <span style={{borderBottom:"3px solid red"}}>to</span><span style={{borderBottom:"3px solid red"}}> renting</span>
           </Text>
           <Box
             style={{
-              border: "1px solid tomato",
+              // border: "1px solid tomato",
               backgroundColor: "tomato",
               width: "6%"
             }}

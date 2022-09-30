@@ -20,8 +20,6 @@ const AllRoutes = () => {
         {/* <Route path="/debetcard" element={<DebetCard/>} /> */}
         <Route path="/debetcard" element={<CreditCard/>} />
         <Route path="/paymentsuccess" element={<PaymentSucc/>} />
-
-
         
         </Routes>
     </>

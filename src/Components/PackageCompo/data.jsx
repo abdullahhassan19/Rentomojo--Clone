@@ -123,7 +123,7 @@ const applianceData=[
 
 
 
-const furnitureData=[
+const bedroomdata=[
     {
         id:1,
         name:"Kipper Basic Bedroom",
