@@ -5,9 +5,7 @@ import styles from "../Home/Knowmore.module.css";
 export const Knowmore = () => {
   return (
     <>
-      <Container minWidth="90%" style={{}} 
-      marginTop="400px"
-      >
+      <Container minWidth="90%" style={{}} >
         <br/>
         <br/>
         <Box>
