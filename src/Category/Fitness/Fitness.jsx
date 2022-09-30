@@ -5,6 +5,9 @@ import {BiRupee} from 'react-icons/bi'
 import React, { useEffect, useState } from 'react'
 import {AiOutlineHeart} from 'react-icons/ai'
 import {FiFilter} from 'react-icons/fi'
+import { useDispatch } from 'react-redux'
+import { addtocart } from '../../Redux/App/action'
+import SubNavbar from '../Subnavbar/Subnavbar'
 
 
 const data=[
@@ -127,10 +130,22 @@ const ImageBox=({id,name,category,subcategory,desc,price,image})=>{
      
     const [isHovering, setIsHovering] = useState(false);
     const [heart,setHeart]=useState(false)
+    const payload={
+      id:id,
+      name:name,
+      image:image,
+      desc:desc,
+      category:category,
+      subcategory:subcategory,
+      price:price
+    }
 
-
-
-
+    const dispatch=useDispatch()
+    const handleaddtocart=(id)=>{
+      // console.log("CART")
+      dispatch(addtocart(payload))
+      // console.log(id)
+  }
 
     const handleMouseOver = () => {
       setIsHovering(true);
@@ -147,6 +162,7 @@ const ImageBox=({id,name,category,subcategory,desc,price,image})=>{
 
     return(
        <Box >
+         
          <Box className='image-main-box' style={{height:`${isHovering?"360px":"340px"}`,transition:"1s"}}   onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} >
            <Box  className='image-box'>
            <div class="heart-box" onClick={onClickHeart}>{heart?<Image width="20px" height="20px" src='https://img.icons8.com/emoji/2x/red-heart.png'/>:<AiOutlineHeart/>}</div>
@@ -163,7 +179,7 @@ const ImageBox=({id,name,category,subcategory,desc,price,image})=>{
 
             {isHovering && (
           <Box className='button-box'>
-            <Button className='btn' style={{ transition:"2s"}}>Add to Cart</Button>
+            <Button className='btn' style={{ transition:"2s"}} onClick={(e)=>handleaddtocart(id)}>Add to Cart</Button>
           </Box>
         )}
            
@@ -205,7 +221,11 @@ const Fitness = () => {
 
 
   return (
+    <>
+    <SubNavbar/>
+    
     <Box className='main-outer-box'>
+      
       <Box style={{display:"flex",justifyContent:"space-between",padding:"2%"}}>
         <Box><FiFilter/>Filters</Box>
         <Box>
@@ -271,6 +291,7 @@ const Fitness = () => {
         
     </Box>
     </Box>
+    </>
   )
 }
 
