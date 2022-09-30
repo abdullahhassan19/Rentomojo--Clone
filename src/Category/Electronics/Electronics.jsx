@@ -5,6 +5,8 @@ import {BiRupee} from 'react-icons/bi'
 import React, { useEffect, useState } from 'react'
 import {AiOutlineHeart} from 'react-icons/ai'
 import SubNavbar from '../Subnavbar/Subnavbar'
+import { useDispatch, useSelector } from 'react-redux'
+import { addtocart } from '../../Redux/App/action'
 
 const data=[
     {
@@ -148,17 +150,27 @@ const data=[
     
     ]
 
-
-
-
-
-
 const ImageBox=({id,name,category,subcategory,desc,price,image})=>{
      
     const [isHovering, setIsHovering] = useState(false);
     const [heart,setHeart]=useState(false)
-
-
+   
+    const dispatch=useDispatch()
+   
+    const payload={
+        id:id,
+        name:name,
+        image:image,
+        desc:desc,
+        category:category,
+        subcategory:subcategory,
+        price:price
+      }
+    const handleaddtocart=(id)=>{
+        console.log("CART")
+        dispatch(addtocart(payload))
+        // console.log(id)
+    }
 
 
 
@@ -194,7 +206,7 @@ const ImageBox=({id,name,category,subcategory,desc,price,image})=>{
 
             {isHovering && (
           <Box className='button-box'>
-            <Button className='btn' style={{ transition:"2s"}}>Add to Cart</Button>
+            <Button className='btn' style={{ transition:"2s"}} onClick={(e)=>handleaddtocart(id)}>Add to Cart</Button>
           </Box>
         )}
            
@@ -210,8 +222,9 @@ const ImageBox=({id,name,category,subcategory,desc,price,image})=>{
 
 const Electronics = () => {
     const[Data,setData]=useState([])
-    console.log('Data:', Data)
+    // console.log('Data:', Data)
 
+    
 useEffect(()=>{
 setData(data)
 },[data])

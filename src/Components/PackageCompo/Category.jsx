@@ -14,7 +14,7 @@ const Category = () => {
           alt=""
         />
         <div className="category">
-          <p>Packages</p>
+          <p>bedroom</p>
         </div>
       </div>
       <div>
