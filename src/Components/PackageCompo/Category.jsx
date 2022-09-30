@@ -8,7 +8,7 @@ const Category = () => {
     <SubNavbar/>
     <div className="mainDiv">
       
-      <div>
+      <div className="hover">
         <img
           src="https://www.rentomojo.com/public/images/category/package-bg/living-room-v2.jpg"
           alt=""
@@ -17,7 +17,7 @@ const Category = () => {
           <p>bedroom</p>
         </div>
       </div>
-      <div>
+      <div className="hover">
         <img
           src="https://www.rentomojo.com/public/images/category/package-bg/dining-v1.jpg"
           alt=""
@@ -28,7 +28,7 @@ const Category = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="hover">
         <img
           src="https://www.rentomojo.com/public/images/category/appliances-bg/washing-machines.jpg"
           alt=""
@@ -40,7 +40,7 @@ const Category = () => {
 
 
       <Link to="/electronics">
-      <div>
+      <div className="hover">
         <img
           src="https://www.rentomojo.com/public/images/category/appliances-bg/laptops_new_2.jpg"
           alt=""
@@ -59,7 +59,8 @@ const Category = () => {
       </div>
 
       </Link>
-      <div>
+      <Link to="/fitness">
+      <div className="hover">
         <img
           src="https://www.rentomojo.com/public/images/category/fitness/cross-trainers.jpg"
           alt=""
@@ -68,6 +69,7 @@ const Category = () => {
           <p>Fitness</p>
         </div>
       </div>
+      </Link>
     </div>
 
     </>

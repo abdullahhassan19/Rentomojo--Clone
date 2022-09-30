@@ -167,7 +167,7 @@ const ImageBox=({id,name,category,subcategory,desc,price,image})=>{
         price:price
       }
     const handleaddtocart=(id)=>{
-        console.log("CART")
+        // console.log("CART")
         dispatch(addtocart(payload))
         // console.log(id)
     }

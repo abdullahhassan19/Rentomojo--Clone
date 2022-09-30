@@ -11,7 +11,7 @@
     /* border: 1px solid red; */
      margin-top: 30px;
 }
-.mainDiv > div :hover {
+.hover:hover {
     transform: scale(1.1);
 }
 .mainDiv >div > img {

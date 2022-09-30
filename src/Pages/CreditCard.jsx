@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Cards from "react-credit-cards";
 import "react-credit-cards/es/styles-compiled.css";
-import styles from "../styles.css"
 import { Navigate, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 

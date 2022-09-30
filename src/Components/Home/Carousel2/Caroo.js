@@ -198,7 +198,7 @@ const data = [
 const CardCarousel = () => {
   return (
     <CarouselProvider
-      naturalSlideWidth={10}
+      naturalSlideWidth={8}
       naturalSlideHeight={10}
       totalSlides={data.length}
       visibleSlides={4}

@@ -1,10 +1,6 @@
-
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
-import Homepage from './Pages/Homepage';
-
 import Footer from './footer/Footer';
-// <<<<<<< HEAD
 import AllRoutes from './Routes/AllRoutes';
 import "./styles.css";
 
@@ -14,7 +10,6 @@ function App() {
      <Navbar/>
      <AllRoutes/>
     <Footer/>
-    
     </div>
   );
 }
