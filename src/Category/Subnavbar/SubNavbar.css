@@ -1,0 +1,39 @@
+.subnavbar{
+    background-color: rgb(247, 241, 241);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid rgb(247, 241, 241);
+    border-top: 1px solid rgb(247, 241, 241);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.subnavbar-main-box{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin: auto;
+    
+   color: gray;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+.link{
+text-decoration: none;
+font-size: 14px;
+color:gray
+}
+
+.link:hover{
+color: rgb(113, 233, 185);
+}
+
+.category{
+    width: 36%;
+    display: flex;
+    gap: 5%;
+    padding-right: 2%;
+}

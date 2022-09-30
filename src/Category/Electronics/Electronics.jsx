@@ -1,14 +1,15 @@
 import './Electronics.css'
-
-
+import {Box,Button,Image,Text} from '@chakra-ui/react'
+import {HiOutlineTruck} from 'react-icons/hi'
+import {BiRupee} from 'react-icons/bi'
 import React, { useEffect, useState } from 'react'
-
+import {AiOutlineHeart} from 'react-icons/ai'
 
 const data=[
     {
         id:1,
         name:"OnePlus 7 (Mirror Gray)",
-        image:"https://p.rmjo.in/productSquare/lbf7407m-500x500.jpg",
+        image:"https://p.rmjo.in/moodShot/zorunxgt-1024x512.jpg",
         desc:"A true successor to OnePlus 6T, OnePlus 7 makes a grand return with its 6.41” FHD+ Optic AMOLED packed in a neat waterdrop notch, dual-stereo speakers and a superior dual-rear camera setup (48+5 MP). Experience uninterrupted gaming experience with the new Fnatic gaming mode and Warp Charge 30 technology that’s ready for the day in less than 20 minutes.",
         category:"electronics",
         subcategory:"smartphones",
@@ -26,7 +27,7 @@ const data=[
     {
         id:3,
         name:"Samsung Galaxy Note 10 (Aura Black)",
-        image:"https://p.rmjo.in/productSquare/fhonufah-500x500.jpg",
+        image:"https://p.rmjo.in/moodShot/dem5mxy3-1024x512.jpg",
         desc:"With a 6.3-inch dynamic AMOLED screen and a 7nm processor, Samsung Galaxy Note10 is a mobile that packs the experience of a computer, a gaming console, a movie-tech camera and an intelligent pen into one device! The Note10 has 4 cameras ( 1 front and 3 rear) and scores big on all the camera essentials, from the dual aperture lens to an ultra wide camera, live focus, and even scene optimizer. With the all-new elegant S pen, writing notes on-the-go is easier and the Note10 will turn your handwritten notes into readable, shareable text.",
         category:"electronics",
         subcategory:"smartphones",
@@ -100,7 +101,7 @@ const data=[
     {
         id:11,
         name:"Samsung Galaxy Tab S4 (Black)",
-        image:"https://p.rmjo.in/productSquare/dvlj6ic5-500x500.jpg",
+        image:"https://p.rmjo.in/moodShot/hw444up0-1024x512.jpg",
         desc:"The Samsung Galaxy Tab S4 comes with an amazing 10.5-inch Super AMOLED display, which gives you an expansive viewing area. The stylus lets you send personalised messages and also jot down notes or ideas without having to unlock. That’s not it, this tablet also comes with an 8MP front camera, Qualcomm Snapdragon processor and multi-layer security to protect your data.",
         category:"electronics",
         subcategory:"tables",
@@ -109,7 +110,7 @@ const data=[
     {
         id:12,
         name:"Apple iPad 10.2 inch (Grey)",
-        image:"https://p.rmjo.in/productSquare/prlx76wq-500x500.jpg",
+        image:"https://p.rmjo.in/moodShot/qo33wdzt-1024x512.jpg",
         desc:"From taking notes, sketching out an idea or just editing a document, Apple iPad 10.2 can get all your work done without any hassle. Powered by A10 Fusion chip, iPad 10.2 is perfect for watching your favorite series or working on your next masterpiece. With the versatility of a computer and portability of a smart device, iPad 10.2 is ready for all your adventures.",
         category:"electronics",
         subcategory:"tables",
@@ -147,10 +148,57 @@ const data=[
     ]
 
 
-const ImageBox=()=>{
+
+
+
+
+const ImageBox=({id,name,category,subcategory,desc,price,image})=>{
+     
+    const [isHovering, setIsHovering] = useState(false);
+    const [heart,setHeart]=useState(false)
+
+
+
+
+
+    const handleMouseOver = () => {
+      setIsHovering(true);
+    };
+  
+    const handleMouseOut = () => {
+      setIsHovering(false);
+    };
+
+
+    const onClickHeart=()=>{
+        setHeart(!heart)
+    }
+
     return(
-        <>
-        </>
+       <Box >
+         <Box className='image-main-box' style={{height:`${isHovering?"360px":"340px"}`,transition:"1s"}}   onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} >
+           <Box  className='image-box'>
+           <div class="heart-box" onClick={onClickHeart}>{heart?<Image width="20px" height="20px" src='https://img.icons8.com/emoji/2x/red-heart.png'/>:<AiOutlineHeart/>}</div>
+            <Image className='img' src={image}  /></Box> 
+           <Box className='name'><Text fontWeight="500" style={{textAlign:"center"}}>{name}</Text></Box>
+         
+           <Box style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginTop:"-15px",
+        width:"95%",margin:"auto",marginBottom:"5px"}}>
+            <Box><Text fontWeight="500"><BiRupee/>{price}/mo</Text></Box>
+            <Box><Text fontWeight="500"><HiOutlineTruck/>5 days</Text></Box>
+
+
+            </Box> 
+
+            {isHovering && (
+          <Box className='button-box'>
+            <Button className='btn' style={{ transition:"2s"}}>Add to Cart</Button>
+          </Box>
+        )}
+           
+        </Box>
+       
+       </Box>
     )
 }
 
@@ -168,12 +216,21 @@ setData(data)
 
 
   return (
-    <div>Electronics
-        {
+    <div>
+     <Box className='container'>   {
              Data.map((item)=>{
-                return <img key={item.id} src={item.image}/>
+                return <ImageBox key={item.id}  
+                            image={item.image}
+                            name={item.name}
+                            id={item.id}
+                            desc={item.desc}
+                            price={item.price}
+                            category={item.category}
+                            subcategory={item.subcategory}
+                            />
             })
         }
+        </Box>
         
     </div>
   )
