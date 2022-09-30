@@ -4,7 +4,7 @@ import {Link, useParams} from 'react-router-dom'
 import './SubNavbar.css'
 const SubNavbar = () => {
   const pathname = window.location.pathname
-  console.log(pathname)
+  // console.log(pathname)
   return (
    <Box className='subnavbar'>
      <Box className='subnavbar-main-box'>

@@ -35,7 +35,7 @@ const Cart = () => {
   }
 // console.log(total)
   const handleBuy = () => {
-    console.log(total)
+    // console.log(total)
     dispatch(totalamount(total))
     navigate("/debetcard")
 

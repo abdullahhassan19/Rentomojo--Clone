@@ -28,7 +28,7 @@ export const Knowmore = () => {
             marginLeft="30px"
             
           >
-          <div>There's more</div>
+          There's more
           </Text>
         </Box>
         <Box

@@ -44,7 +44,7 @@ useEffect(()=>{
   return (
     <div className='paymentdonemain'>
       <h1>Thanks for Renting</h1>
-      <h2 className='ordtoken'>Your Order Id is <span className='token'>RNT914024SUC</span> </h2>
+      <h2 className='ordtoken'>Your Order Id is <span className='token'>RNT914024ORD</span> </h2>
       <h2 className='redire'>Redirecting You To Home Page in... {timmer}</h2>
       {/* <h2 id='redirect'>order</h2> */}
 

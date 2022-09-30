@@ -86,6 +86,7 @@ Here's what they have<br/> <span style={{marginLeft:"-49px"}}>to say about their
         <StyledSlider classNameAnimation="animating">
           {data.map((item, index) => (
             <StyledSlide
+            key={index}
               index={index}
               classNameHidden="hidden"
               classNameVisible="visible"

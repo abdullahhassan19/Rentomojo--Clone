@@ -165,7 +165,7 @@ const ImageBox=({id,name,category,subcategory,desc,price,image})=>{
          
          <Box className='image-main-box' style={{height:`${isHovering?"360px":"340px"}`,transition:"1s"}}   onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} >
            <Box  className='image-box'>
-           <div class="heart-box" onClick={onClickHeart}>{heart?<Image width="20px" height="20px" src='https://img.icons8.com/emoji/2x/red-heart.png'/>:<AiOutlineHeart/>}</div>
+           <div className="heart-box" onClick={onClickHeart}>{heart?<Image width="20px" height="20px" src='https://img.icons8.com/emoji/2x/red-heart.png'/>:<AiOutlineHeart/>}</div>
             <Image className='img' src={image}  /></Box> 
            <Box className='name'><Text fontWeight="500" style={{textAlign:"center"}}>{name}</Text></Box>
          

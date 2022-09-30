@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Cards from "react-credit-cards";
 import "react-credit-cards/es/styles-compiled.css";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 const CreditCard = () => {
@@ -23,12 +23,10 @@ const CreditCard = () => {
 
   const handleordersuccess=(e)=>{
     e.preventDefault()
-    // console.log("NIKDOD")
     navigate("/paymentsuccess")
    
   }
-const total =useSelector((state)=>state.reducer.total)
-// console.log(total)
+  const total =useSelector((state)=>state.reducer.total)
   return (
     <div className="credit">
       {/* <div className="rccs__card backcolor"> */}
@@ -127,8 +125,6 @@ const total =useSelector((state)=>state.reducer.total)
               onChange={handleExpiry}
             >
               <option value=" ">Year</option>
-              <option value="21">2021</option>
-              <option value="22">2022</option>
               <option value="23">2023</option>
               <option value="24">2024</option>
               <option value="25">2025</option>
