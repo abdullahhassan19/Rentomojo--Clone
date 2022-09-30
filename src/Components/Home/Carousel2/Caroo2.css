@@ -5,8 +5,9 @@
       margin: 0;
       margin-bottom: 35px;
       position: relative;
-      line-height: 1.4;
+      /* line-height: 1.4; */
       margin-left: 75px;
+      margin-top: -20px;
   }
 .rm-main-head >span {
     display: block;
