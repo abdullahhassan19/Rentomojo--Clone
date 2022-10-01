@@ -7,7 +7,7 @@ export const Knowmore = () => {
     <>
 
       {/* <Container minWidth="90%" style={{}} > */}
-      <Container minWidth="90%" >
+      <Container minWidth="90%" style={{marginTop:"400px"}} >
         <br/>
         <br/>
         <Box >

@@ -1,17 +1,32 @@
 .rm-main-head{
+  width: 200px;
     color: #313131;
       font-size: 22px;
       font-weight: 400;
-      margin: 0;
-      margin-bottom: 35px;
-      position: relative;
+      /* border: 1px solid red; */
+      margin-left: 70px;
+      /* margin: 0; */
+      /* margin-bottom: 105px; */
+      /* position: relative; */
       /* line-height: 1.4; */
-      margin-left: 75px;
-      margin-top: -20px;
-  }
-.rm-main-head >span {
+      /* margin-left: 75px; */
+      /* margin-top: -20px; */
+  } 
+/* .rm-main-head >span {
     display: block;
     font-weight: 300;
+} */
+.borderreed{
+  color: rgb(213, 43, 43);
+  font-weight: 500;
+  border-bottom: 3px solid red;
+}
+.takehomeborder{
+
+  border-bottom:10px solid black;
+}
+.takeandhome{
+  color: rgb(78, 77, 77);
 }
 .sc-gKXOVf ghbVGk{
   background-color: teal;
@@ -43,8 +58,8 @@
    
 }
 .cor2upperdiv{
-  width: 100px;
-  height: 100px;
+  /* width: 100px; */
+  /* height: 100px; */
   /* padding-left: 50px; */
   /* margin-left: 50px; */
   /* background-color: teal; */

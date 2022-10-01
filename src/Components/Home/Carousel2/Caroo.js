@@ -205,12 +205,21 @@ const CardCarousel = () => {
       step={1}
     >
       <div className="cor2upperdiv"style={{display:"flex" }}>
-        <div className="rm-main-head">
-          You'll love to
-          <span style={{borderBottom:"3px solid red",marginLeft:"30px"}}>take <span style={{borderBottom:"5px solid white"}}>these home</span></span>
+        <div  className="rm-main-head" >
+          <p className="youwilllove">You Will Love to</p>
+          <div style={{display:"flex"}}>
+            <p style={{borderBottom:"3px solid red"}}>Take</p>
+            <p style={{marginLeft:"10px"}} > these Home</p>
+          </div>
+           
+        
         </div>
         <div>
-          <ButtonContainer style ={{ position:"relative", left:"900px"}}>
+          <ButtonContainer style ={{ position:"relative", 
+          left:"500px",
+          display:"flex",
+          alignItems:"center",
+          }}>
             <BackButton>
               <FiChevronLeft size="1.5em" />
             </BackButton>
@@ -221,7 +230,10 @@ const CardCarousel = () => {
         </div>
       </div>
       
-      <SliderContainer style={{marginTop:"-45px"}}>
+      <SliderContainer style={{
+        marginTop:"-20px",
+    
+        }}>
         <StyledSlider classNameAnimation="animating">
           {data.map((item, index) => (
             <StyledSlide
@@ -236,11 +248,11 @@ const CardCarousel = () => {
                   <div><h2 style={{fontSize:"18px",textAlign:"left",marginLeft:"-20px"}}>{item.title}</h2></div>
                   <div className="ratetxtcar2">
                     <div>
-                      <div><p style={{color:"gray",marginLeft:"-53px"}}>rent</p></div>
+                      <div><p style={{color:"gray",marginLeft:"-18px",marginTop:"10px"}}>Rent</p></div>
                       <div><p  style={{marginLeft:"-18px"}}>{`₹${item.amount}/mo`}</p></div>
                     </div>
-                    <div className="seemorediv">
-                        <div><p className="see-More">See More</p></div>
+                    <div className="seemorediv" style={{marginLeft:"70px",marginTop:"20px"}}>
+                        <div><p className="see-More" style={{width:"100px" }}>See More</p></div>
                     </div>
                   </div>
                 </CardText>

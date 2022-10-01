@@ -89,7 +89,7 @@ const Reviews = () => {
           >
             Over 1.5 lac
           </Text>
-          <Text fontFamily={"Muli, sans-serif"} fontSize="20px" color={"grey"}>
+          <Text fontFamily={"Muli, sans-serif"} fontSize="20px" color={"grey"} >
             happy subscribers
           </Text>
           <Box width="50px" border="1px solid red"></Box>
