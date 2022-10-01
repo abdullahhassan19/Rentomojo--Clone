@@ -5,6 +5,7 @@ import {BiRupee} from 'react-icons/bi'
 import React, { useEffect, useState } from 'react'
 import {AiOutlineHeart} from 'react-icons/ai'
 import {FiFilter} from 'react-icons/fi'
+import SubNavbar from '../Subnavbar/Subnavbar'
 
 
 const applianceData=[
@@ -209,6 +210,7 @@ const ImageBox=({id,name,category,subcategory,desc,price,image})=>{
 
     return(
        <Box >
+        
          <Box className='image-main-box' style={{height:`${isHovering?"360px":"340px"}`,transition:"1s"}}   onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} >
            <Box  className='image-box'>
            <div className="heart-box" onClick={onClickHeart}>{heart?<Image width="20px" height="20px" src='https://img.icons8.com/emoji/2x/red-heart.png'/>:<AiOutlineHeart/>}</div>
@@ -267,6 +269,8 @@ const Appliances = () => {
 
 
   return (
+    <>
+     <SubNavbar/>
     <Box className='main-outer-box'>
       <Box style={{display:"flex",justifyContent:"space-between",padding:"2%"}}>
         <Box><FiFilter/>Filters</Box>
@@ -336,6 +340,7 @@ const Appliances = () => {
         
     </Box>
     </Box>
+    </>
   )
 }
 
