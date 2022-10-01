@@ -230,7 +230,7 @@ return (
             <Text fontSize={['12px','12px','13px']}><a href='mailto:jo@rentomojo.com' style={{color:"gray"}}>
               <SiMinutemailer/>jo@rentomojo.com</a></Text>
           <Box>  <Text className='main-text'>DOWNLOAD APP</Text>
-            <Box style={{display:"flex"}}>
+            <Box className='google-Apple-play'>
              <a href='https://play.google.com/store/apps/details?id=com.rentomojo&_branch_match_id=981958682668916786&utm_source=automation&utm_campaign=App%20Download&utm_medium=Website&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL8rNz8rXy8zTL3ILTfYKK052jAQA4IGbfRsAAAA%3D'>
              
              <Image height="40px" src='https://www.freepnglogos.com/uploads/itunes-logo/google-play-itunes-png-logo-4.png' width='120px'/>
