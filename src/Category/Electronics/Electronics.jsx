@@ -222,17 +222,73 @@ const ImageBox=({id,name,category,subcategory,desc,price,image})=>{
 
 const Electronics = () => {
     const[Data,setData]=useState([])
-    // console.log('Data:', Data)
+    const [sortType, setSortType] = useState('');// for sorting the data ===
 
-    
-useEffect(()=>{
-setData(data)
-},[data])
-
+    useEffect(()=>{
+        setData(data)
+       if(sortType==="asc"){
+        const sorted = [...Data].sort((a, b) => a.price - b.price);
+        console.log('sorted:', sorted)
+        setData(sorted)
+       }
+       if(sortType==="des"){
+        const sorted = [...Data].sort((a, b) => b.price - a.price);
+        setData(sorted)
+       } 
+    },[data,sortType])
 
   return (
     <div>
         <SubNavbar/>
+
+        <Box className='main-outer-box'>
+          <Box style={{display:"flex",justifyContent:"space-between",padding:"2%"}}>
+            <Box><FiFilter/>Filters</Box>
+            <Box>
+             
+              <Stack spacing={2}>
+                 
+           <Select onChange={(e) =>setSortType(e.target.value)} placeholder='Relevance' size='sm' 
+             style={{color:"teal",border:"0px",backgroundColor:"#F0F8FF",fontSize:"14px"}}>
+                        
+                         <option value="asc"> Rent-Low To High</option>
+                         <option value="des"> Rent-High To Low </option>
+                  </Select>
+                  
+              </Stack>
+              </Box>
+            </Box>
+    
+ 
+     <Box style={{display:"flex"}}>
+         <Box w={["0%","25%","25%"]} style={{paddingBottom:"2%",textAlign:"left"}} >
+    
+    
+         <Stack className='filter-stack'  direction={['column',]}>
+         <Text  >PRODUCT TYPE</Text>
+          <Checkbox  style={{color:"teal",fontSize:"15px",}}  >SmartPhones</Checkbox>
+          <Checkbox style={{color:"teal",fontSize:"15px",}} >Laptops</Checkbox>
+          <Checkbox style={{color:"teal",fontSize:"15px",}} >Gaming Consoles</Checkbox>
+          <Checkbox style={{color:"teal",fontSize:"15px",}} >Smart Devices</Checkbox>
+          <Checkbox style={{color:"teal",fontSize:"15px",}} >Tables</Checkbox>
+    
+         </Stack>
+    
+    
+    
+        <Stack className='filter-stack'>
+          <Text >AVAILABILITY</Text>
+          <Checkbox style={{color:"teal",fontSize:"15px",}}  defaultChecked>Out Of Stock</Checkbox>
+          </Stack> 
+    
+    <Stack className='filter-stack' style={{backgroundColor:"#E0FFFF",border:"0.5px solid teal",borderRadius:"1%"}}>
+    <Text fontSize='sm' fontWeight="500">What do you want us to launch next?</Text>
+    <Text fontSize='xs' color="gray">Suggest us a product</Text>
+    <Input  height='45px' placeholder='Your Suggestion' style={{border:"1px solid teal",marginBottom:"3%",borderRadius:"2%"}} />
+    </Stack>
+    
+         </Box>
+             
      <Box className='container'>   {
              Data.map((item)=>{
                 return <ImageBox key={item.id}  
@@ -247,7 +303,8 @@ setData(data)
             })
         }
         </Box>
-        
+        </Box>
+        </Box>
     </div>
   )
 }
