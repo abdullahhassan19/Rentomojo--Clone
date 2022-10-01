@@ -15,7 +15,9 @@ import {SiMinutemailer} from "react-icons/si"
 
 function ReadMore(){
 
-return (<>
+return (
+<>
+<div className='footermaindiv'>
         <Heading fontSize={['15px','18px','18px']}>
         Rent Everything You Need For Your Home From One Convenient Location.
          </Heading>
@@ -106,6 +108,7 @@ return (<>
          </li>
         
         </ul> 
+        </div>
 
 </>)
 
