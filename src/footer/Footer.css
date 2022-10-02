@@ -1,9 +1,16 @@
+.footermaindiv{
+    /* border: 10px solid red; */
+}
+
+
 .footer-main{
 background-color: rgb(236, 243, 241);
 margin: auto;
+margin-top: 200px;
 text-align: left;
 color: rgb(102, 100, 100);
-padding-bottom: 70px;
+/* padding-bottom: 70px; */
+
 }
 
 .first-child-footer{

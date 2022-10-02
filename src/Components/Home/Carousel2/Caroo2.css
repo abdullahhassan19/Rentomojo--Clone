@@ -1,13 +1,22 @@
 .rm-main-head{
+  /* border:1px solid red; */
     color: #313131;
       font-size: 22px;
       font-weight: 400;
       margin: 0;
       margin-bottom: 35px;
       position: relative;
-      /* line-height: 1.4; */
+      line-height: 1.4;
       margin-left: 75px;
       margin-top: -20px;
+  }
+  .loveto{
+    /* border: 1px solid red; */
+    width:180px
+  }
+  .takethese{
+    /* border:1px solid red; */
+    margin-left:-27px;
   }
 .rm-main-head >span {
     display: block;
@@ -28,13 +37,14 @@
    /* margin-top: 30px; */
    color:red;
    margin:auto ;
-   padding:5px;
+   /* padding:5px; */
    box-sizing: border-box;
    cursor: pointer;
    
 }
 .see-More{
-  margin-top: -3px;
+  margin-top: 3px;
+  text-align: center;
 }
 .seemorediv:hover{
   

@@ -7,6 +7,7 @@
 }
 
 .button-box{
+    text-align: center;
 align-items: center;
 width:100%;
 margin: auto;
@@ -88,6 +89,7 @@ border-radius: 25px;
 .main-outer-box{
 width: 80%;
 margin: auto;
+height: auto;
 }
 
 

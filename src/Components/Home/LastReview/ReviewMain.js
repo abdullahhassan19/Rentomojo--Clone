@@ -67,18 +67,18 @@ const CardCarousel = () => {
     >
       <ButtonContainer>
         <TextCont>
-        <span style={{marginLeft:"-80px"}}>Over 1.5 lac</span>
+        <span style={{marginLeft:"-147px"}}>Over 1.5 lac</span>
         <br/>
-      <span  style={{marginLeft:"-33px"}}>happy subscribers</span>
+      <span  style={{marginLeft:"-146px"}}>happy subscribers</span>
 <br/>
 <br/>
 
-Here's what they have<br/> <span style={{marginLeft:"-49px"}}>to say about their</span><br/> RentoMojo experience.
+<span style={{marginLeft:"-150px"}}>Here's what they have</span><br/> <span style={{marginLeft:"-149px"}}>to say about their</span><br/> <span style={{marginLeft:"-149px"}}>RentoMojo experience.</span>
           </TextCont>
-        <BackButton>
+        <BackButton style={{marginLeft:"-150px"}}>
           <FiChevronLeft size="1.5em" />
         </BackButton>
-        <NextButton>
+        <NextButton style={{marginLeft:"-150px"}}>
           <FiChevronRight size="1.5em" />
         </NextButton>
       </ButtonContainer>
@@ -94,8 +94,8 @@ Here's what they have<br/> <span style={{marginLeft:"-49px"}}>to say about their
               <Card>
                 <CardImage backgroundImage={item.src} />
                 <CardText>
-                  <h2 style={{marginTop:"-470px",marginLeft:"5px",fontSize:"14px",color:"grey",fontFamily:"sans-serif"}}>{item.title}</h2>
-                  <p style={{marginTop:"90px",lineHeight:"25px",textAlign:"center",color:"gray",fontFamily:"sans-serif",fontSize:"14px"}}>{item.cardText}</p>
+                  <h2 style={{marginTop:"-460px",marginLeft:"135px",fontSize:"14px",color:"grey",fontFamily:"sans-serif"}}>{item.title}</h2>
+                  <p style={{marginTop:"90px",lineHeight:"25px",textAlign:"center",color:"gray",fontFamily:"sans-serif",fontSize:"14px",padding:"15px",textAlign:"center"}}>{item.cardText}</p>
                 </CardText>
                 {/* <CardButton />
                 <CardButtonBlue /> */}

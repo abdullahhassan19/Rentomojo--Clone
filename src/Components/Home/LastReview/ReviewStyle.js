@@ -51,13 +51,14 @@ export const CardImage = styled.img`
 `;
 
 export const Card = styled.div`
-/* border:1px solid red; */
+//  border:1px solid red; 
   display: flex;
   border-radius:10px;
   flex-direction: column;
   justify-content: space-between;
   height: 490px;
   width: 440px;
+  margin-left:90px;
   background-color:  #e6f3ff;
   box-shadow: -5px 4px 74px -16px rgba(0, 0, 0, 0.15);
   transition: transform 1s;
@@ -85,20 +86,20 @@ export const ButtonContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* background-color: #242a3a; */
+  //  background-color: #242a3a; 
   position: absolute;
-  width: 350px;
+  width: 480px;
   left: 0;
   height: 400px;
-  margin-left:30px;
+  margin-left:-60px;
   margin-top:70px;
 `;
 
 export const SliderContainer = styled.div`
-/* border:1px solid red; */
+// border:1px solid red; 
   position: relative;
-  left: 500px;
-  width:1000px;
+  left: 230px;
+  width:1060px;
   height: 560px;
   margin-top:55px;
   padding-top: 40px;
