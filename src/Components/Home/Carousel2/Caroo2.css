@@ -1,13 +1,19 @@
 .rm-main-head{
+   /* border: 1px solid red; */
+   width:300px;
     color: #313131;
       font-size: 22px;
-      font-weight: 400;
-      margin: 0;
+      /* font-weight: 200; */
+      /* margin: 0; */
       margin-bottom: 35px;
       position: relative;
-      /* line-height: 1.4; */
+      line-height: 1.4;
       margin-left: 75px;
       margin-top: -20px;
+  }
+  .you{
+    /* border:1px solid black; */
+    width:180px
   }
 .rm-main-head >span {
     display: block;
@@ -28,13 +34,15 @@
    /* margin-top: 30px; */
    color:red;
    margin:auto ;
-   padding:5px;
+   
+   /* padding:5px; */
    box-sizing: border-box;
    cursor: pointer;
    
 }
 .see-More{
-  margin-top: -3px;
+  margin-top: 2px;
+  text-align: center;
 }
 .seemorediv:hover{
   

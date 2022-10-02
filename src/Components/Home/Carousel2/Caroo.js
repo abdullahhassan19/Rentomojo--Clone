@@ -204,13 +204,13 @@ const CardCarousel = () => {
       visibleSlides={4}
       step={1}
     >
-      <div className="cor2upperdiv"style={{display:"flex" }}>
+      <div className="cor2upperdiv"style={{display:"flex"}}>
         <div className="rm-main-head">
-          You'll love to
-          <span style={{borderBottom:"3px solid red",marginLeft:"30px"}}>take <span style={{borderBottom:"5px solid white"}}>these home</span></span>
+          <p className="you">You'll love to</p>
+         <p> <span style={{borderBottom:"3px solid red"}}>take <span style={{borderBottom:"6px solid white"}}>these home</span></span></p>
         </div>
         <div>
-          <ButtonContainer style ={{ position:"relative", left:"900px"}}>
+          <ButtonContainer style ={{ position:"relative", left:"900px",marginTop:"-60px"}}>
             <BackButton>
               <FiChevronLeft size="1.5em" />
             </BackButton>
@@ -236,7 +236,7 @@ const CardCarousel = () => {
                   <div><h2 style={{fontSize:"18px",textAlign:"left",marginLeft:"-20px"}}>{item.title}</h2></div>
                   <div className="ratetxtcar2">
                     <div>
-                      <div><p style={{color:"gray",marginLeft:"-53px"}}>rent</p></div>
+                      <div><p style={{color:"gray",marginLeft:"-20px"}}>rent</p></div>
                       <div><p  style={{marginLeft:"-18px"}}>{`₹${item.amount}/mo`}</p></div>
                     </div>
                     <div className="seemorediv">

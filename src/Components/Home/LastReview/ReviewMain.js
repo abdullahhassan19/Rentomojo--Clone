@@ -8,18 +8,18 @@ import {
 
  
  
-  StyledSlide,
-  StyledSlider,
-  BackButton,
-  NextButton,
+  StyledSlide2,
+  StyledSlider2,
+  BackButton2,
+  NextButton2,
   CardText,
   CardImage,
   CardButton,
   CardButtonBlue,
   TextCont,
-  Card,
-  ButtonContainer,
-  SliderContainer
+  Card2,
+  ButtonContainer2,
+  SliderContainer2
 } from "./ReviewStyle";
 
 const data = [
@@ -65,45 +65,45 @@ const CardCarousel = () => {
       visibleSlides={2}
       step={1}
     >
-      <ButtonContainer>
+      <ButtonContainer2>
         <TextCont>
-        <span style={{marginLeft:"-80px"}}>Over 1.5 lac</span>
+        <span style={{marginLeft:"-200px"}}>Over 1.5 lac</span>
         <br/>
-      <span  style={{marginLeft:"-33px"}}>happy subscribers</span>
+      <span  style={{marginLeft:"-198px"}}>happy subscribers</span>
 <br/>
 <br/>
 
-Here's what they have<br/> <span style={{marginLeft:"-49px"}}>to say about their</span><br/> RentoMojo experience.
+<span  style={{marginLeft:"-200px"}}>Here's what they have</span><br/> <span style={{marginLeft:"-200px"}}>to say about their</span><br/> <span  style={{marginLeft:"-200px"}}>RentoMojo experience.</span>
           </TextCont>
-        <BackButton>
+        <BackButton2 style={{marginLeft:"-80px"}}>
           <FiChevronLeft size="1.5em" />
-        </BackButton>
-        <NextButton>
+        </BackButton2>
+        <NextButton2 style={{marginLeft:"-80px"}}>
           <FiChevronRight size="1.5em" />
-        </NextButton>
-      </ButtonContainer>
-      <SliderContainer>
-        <StyledSlider classNameAnimation="animating">
+        </NextButton2>
+      </ButtonContainer2>
+      <SliderContainer2>
+        <StyledSlider2 classNameAnimation="animating">
           {data.map((item, index) => (
-            <StyledSlide
+            <StyledSlide2
             key={index}
               index={index}
               classNameHidden="hidden"
               classNameVisible="visible"
             >
-              <Card>
+              <Card2>
                 <CardImage backgroundImage={item.src} />
                 <CardText>
-                  <h2 style={{marginTop:"-470px",marginLeft:"5px",fontSize:"14px",color:"grey",fontFamily:"sans-serif"}}>{item.title}</h2>
+                  <h2 style={{marginTop:"-450px",marginLeft:"100px",fontSize:"14px",color:"grey",fontFamily:"sans-serif"}}>{item.title}</h2>
                   <p style={{marginTop:"90px",lineHeight:"25px",textAlign:"center",color:"gray",fontFamily:"sans-serif",fontSize:"14px"}}>{item.cardText}</p>
                 </CardText>
                 {/* <CardButton />
                 <CardButtonBlue /> */}
-              </Card>
-            </StyledSlide>
+              </Card2>
+            </StyledSlide2>
           ))}
-        </StyledSlider>
-      </SliderContainer>
+        </StyledSlider2>
+      </SliderContainer2>
     </CarouselProvider>
   );
 };

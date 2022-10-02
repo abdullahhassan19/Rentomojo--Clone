@@ -7,13 +7,13 @@ const rootReducer = combineReducers({
     reducer
 });
 
-const devtools = () => {
-  return (
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-  );
-};
+// const devtools = () => {
+//   return (
+//     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+//   );
+// };
 
 export const store = legacy_createStore(
   rootReducer,
-  compose(applyMiddleware(thunk), devtools())
+  // compose(applyMiddleware(thunk), devtools())
 );
