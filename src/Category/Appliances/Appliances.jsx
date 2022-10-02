@@ -6,6 +6,8 @@ import React, { useEffect, useState } from 'react'
 import {AiOutlineHeart} from 'react-icons/ai'
 import {FiFilter} from 'react-icons/fi'
 import SubNavbar from '../Subnavbar/Subnavbar'
+import { useDispatch } from 'react-redux'
+import { addtocart } from '../../Redux/App/action'
 
 
 const applianceData=[
@@ -160,6 +162,23 @@ const ImageBox=({id,name,category,subcategory,desc,price,image})=>{
     const onClickHeart=()=>{
         setHeart(!heart)
     }
+    const payload={
+      id:id,
+      name:name,
+      image:image,
+      desc:desc,
+      category:category,
+      subcategory:subcategory,
+      price:price
+    }
+
+    const dispatch=useDispatch()
+    const handleaddtocart=(id)=>{
+      // console.log("CART")
+      dispatch(addtocart(payload))
+      // console.log(id)
+  }
+  // onClick={(e)=>handleaddtocart(id)}
 
     return(
        <Box >
@@ -180,7 +199,7 @@ const ImageBox=({id,name,category,subcategory,desc,price,image})=>{
 
             {isHovering && (
           <Box className='button-box'>
-            <Button className='btn' style={{ transition:"2s"}}>Add to Cart</Button>
+            <Button className='btn' style={{ transition:"2s"}} onClick={(e)=>handleaddtocart(id)}>Add to Cart</Button>
           </Box>
         )}
            

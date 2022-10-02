@@ -146,6 +146,7 @@ const ImageBox=({id,name,category,subcategory,desc,price,image})=>{
       dispatch(addtocart(payload))
       // console.log(id)
   }
+  // onClick={(e)=>handleaddtocart(id)}
 
     const handleMouseOver = () => {
       setIsHovering(true);
