@@ -8,6 +8,8 @@ import Electronics from "../Category/Electronics/Electronics";
 import CreditCard from "../Pages/CreditCard";
 import PaymentSucc from "../Pages/PaymentSucc";
 import Fitness from "../Category/Fitness/Fitness";
+import Appliances from "../Category/Appliances/Appliances";
+import Furniture from "../Category/Furniture/Furniture";
 // import card from "../Pages/Cardcheck";
 
 const AllRoutes = () => {
@@ -19,7 +21,11 @@ const AllRoutes = () => {
         <Route path="/cart" element={<Cart />} />
         <Route path="/electronics" element={<Electronics />} />
         <Route path="/fitness" element={<Fitness/>} />
-        {/* <Route path="/debetcard" element={<DebetCard/>} /> */}
+
+        <Route path="/appliances" element={<Appliances/>} />
+        <Route path="/furniture" element={<Furniture/>} />
+        {/* <Route path="/fitness" element={<Fitness/>} /> */}
+ 
         <Route path="/debetcard" element={<CreditCard/>} />
         <Route path="/paymentsuccess" element={<PaymentSucc/>} />
         

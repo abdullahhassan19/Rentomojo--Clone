@@ -83,7 +83,7 @@ const Navbar = () => {
         alignItems="center"
         marginRight={{ xl: 16, md: 16, base: 2 }}
         cursor={"pointer"}
-        // onClick={() => navigate(`/cart`)}
+        onClick={() => navigate(`/cart`)}
         h="50px"
         w={{ xl: "80px", md: "40px", base: "80px" }}
         position="relative"

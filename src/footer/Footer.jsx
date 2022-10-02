@@ -15,11 +15,13 @@ import {SiMinutemailer} from "react-icons/si"
 
 function ReadMore(){
 
-return (<>
-        <Heading fontSize={['15px','18px','18px']}>
+return (
+<>
+<div className='footermaindiv'>
+        <Heading fontSize={['15px','18px','18px']} style={{marginTop:"5px"}} >
         Rent Everything You Need For Your Home From One Convenient Location.
          </Heading>
-        <Text fontSize={['12px','12px','13px']} style={{marginTop:"-15px"}}>We offer a handpicked selection of furniture, appliances, and electronics for residents of Bangalore.</Text>
+        <Text fontSize={['12px','12px','13px']} style={{marginTop:"15px"}}>We offer a handpicked selection of furniture, appliances, and electronics for residents of Bangalore.</Text>
       <ul>
       <li>  <Text fontSize={['12px','12px','13px']}>
       <a>Furniture on rent:</a> You can rent furniture for your bedroom, living room, dining room or nursery. Our furniture is made by top, reputed brands.</Text>
@@ -41,10 +43,10 @@ return (<>
 
 
 
-        <Heading fontSize={['15px','18px','18px']}>
+        <Heading fontSize={['15px','18px','18px']} style={{marginTop:"5px"}}>
         Renting From Us Is Smarter Than Buying From A Retailer
          </Heading>
-        <Text fontSize={['12px','12px','13px']} style={{marginTop:"-15px"}}>
+        <Text fontSize={['12px','12px','13px']} style={{marginTop:"15px"}}>
         RentoMojo offers you multiple advantages that no retailer can offer.</Text>
       <ul>
       <li>  <Text fontSize={['12px','12px','13px']}>
@@ -75,10 +77,10 @@ return (<>
 
 
 
-        <Heading fontSize={['15px','18px','18px']}>
+        <Heading fontSize={['15px','18px','18px'] } style={{marginTop:"5px"}}>
         Why RentoMojo in Bangalore?
          </Heading>
-        <Text fontSize={['12px','12px','13px']} style={{marginTop:"-15px"}}>
+        <Text fontSize={['12px','12px','13px']} style={{marginTop:"15px"}}>
         RentoMojo lets you use top-quality furniture, branded electronics, and the best appliances in the market for a fraction of the retail price.</Text>
       <ul>
       <li>  <Text fontSize={['12px','12px','13px']}>
@@ -106,6 +108,7 @@ return (<>
          </li>
         
         </ul> 
+        </div>
 
 </>)
 
@@ -144,10 +147,10 @@ return (<>
     <Box className="footer-main">
     <Center w={['95%','90%',"85%"]}  className="first-child-footer" >
         <Box >
-         <Heading fontSize={['15px','18px','18px']}>
+         <Heading fontSize={['15px','18px','18px']} >
          Enjoy An Upgraded Lifestyle In Bangalore City On A Budget With RentoMojo!
          </Heading>
-        <Text   fontSize={['12px','12px','13px']}>RentoMojo is a leading rental company with a pan-India presence. We offer furniture, appliances, 
+        <Text   fontSize={['12px','12px','13px']}style={{marginTop:"15px"}}>RentoMojo is a leading rental company with a pan-India presence. We offer furniture, appliances, 
             and electronics on rent in Bangalore at an affordable monthly fee. When you choose to rent from us 
             instead of buying from a store, you get to use the best products in the market and still save money!</Text>
         <Text fontSize={['12px','12px','13px']}>Whether you have a home in Bangalore or have just rented a room here, you’ll find everything you
@@ -227,7 +230,7 @@ return (<>
             <Text fontSize={['12px','12px','13px']}><a href='mailto:jo@rentomojo.com' style={{color:"gray"}}>
               <SiMinutemailer/>jo@rentomojo.com</a></Text>
           <Box>  <Text className='main-text'>DOWNLOAD APP</Text>
-            <Box style={{display:"flex"}}>
+            <Box className='google-Apple-play'>
              <a href='https://play.google.com/store/apps/details?id=com.rentomojo&_branch_match_id=981958682668916786&utm_source=automation&utm_campaign=App%20Download&utm_medium=Website&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL8rNz8rXy8zTL3ILTfYKK052jAQA4IGbfRsAAAA%3D'>
              
              <Image height="40px" src='https://www.freepnglogos.com/uploads/itunes-logo/google-play-itunes-png-logo-4.png' width='120px'/>

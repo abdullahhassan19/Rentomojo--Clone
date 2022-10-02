@@ -204,17 +204,17 @@ const CardCarousel = () => {
       visibleSlides={4}
       step={1}
     >
-      <div className="cor2upperdiv"style={{display:"flex"}}>
+      <div className="cor2upperdiv"style={{display:"flex" }}>
         <div className="rm-main-head">
-          <p className="you">You'll love to</p>
-         <p> <span style={{borderBottom:"3px solid red"}}>take <span style={{borderBottom:"6px solid white"}}>these home</span></span></p>
+         <p className="loveto">You'll love to</p>
+         <p className="takethese"> <span style={{borderBottom:"3px solid red",marginLeft:"30px"}}>take</span> <span style={{borderBottom:"5px solid white"}}>these home</span></p>
         </div>
         <div>
-          <ButtonContainer style ={{ position:"relative", left:"900px",marginTop:"-60px"}}>
+          <ButtonContainer style ={{ position:"relative", left:"900px",marginTop:"-50px"}}>
             <BackButton>
               <FiChevronLeft size="1.5em" />
             </BackButton>
-            <NextButton>
+            <NextButton >
               <FiChevronRight size="1.5em" />
             </NextButton>
           </ButtonContainer>

@@ -50,15 +50,15 @@ export const CardImage = styled.img`
   overflow: hidden;
 `;
 
-export const Card2 = styled.div`
+export const Card = styled.div`
 //  border:1px solid red; 
   display: flex;
   border-radius:10px;
   flex-direction: column;
   justify-content: space-between;
   height: 490px;
-  width: 480px;
-  padding:10px;
+  width: 440px;
+  margin-left:90px;
   background-color:  #e6f3ff;
   box-shadow: -5px 4px 74px -16px rgba(0, 0, 0, 0.15);
   transition: transform 1s;
@@ -81,35 +81,34 @@ export const CardText = styled.div`
   /* padding-left: 125px; */
 `;
 
-export const ButtonContainer2 = styled.div`
+export const ButtonContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   //  background-color: #242a3a; 
   position: absolute;
-  width: 580px;
+  width: 480px;
   left: 0;
   height: 400px;
-  margin-left:-110px;
+  margin-left:-60px;
   margin-top:70px;
 `;
 
-export const SliderContainer2 = styled.div`
+export const SliderContainer = styled.div`
 // border:1px solid red; 
   position: relative;
-  left: 220px;
-  width:1000px;
+  left: 230px;
+  width:1060px;
   height: 560px;
   margin-top:55px;
   padding-top: 40px;
-
 
   & ul.animating {
     transition: all 900ms ease-in-out;
   }
 `;
-export const BackButton2 = styled(ButtonBack)`
+export const BackButton = styled(ButtonBack)`
   background-color: white;
   padding: 10px;
   margin: 10px;
@@ -125,7 +124,7 @@ export const BackButton2 = styled(ButtonBack)`
     border: 3px solid aqua;
   }
 `;
-export const NextButton2 = styled(ButtonNext)`
+export const NextButton = styled(ButtonNext)`
   background-color: white;
   padding: 10px;
   border-radius: 50%;
@@ -142,7 +141,7 @@ export const NextButton2 = styled(ButtonNext)`
   }
 `;
 
-export const StyledSlide2 = styled(Slide)`
+export const StyledSlide = styled(Slide)`
   transition: all 500ms ease-in;
   &.hidden {
     transition-delay: ${({ index }) => (index % 3) * 150}ms;
@@ -155,6 +154,6 @@ export const StyledSlide2 = styled(Slide)`
   }
 `;
 
-export const StyledSlider2 = styled(Slider)`
+export const StyledSlider = styled(Slider)`
   overflow: unset;
 `;
