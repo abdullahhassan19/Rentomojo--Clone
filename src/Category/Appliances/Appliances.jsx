@@ -129,55 +129,8 @@ const applianceData=[
   category:"appliance",
   subcategory:"purifire",
   price:779
-},
-{
-  id:16,
-  name:"LED TV - 32",
-  image:"https://p.rmjo.in/moodShot/rmj0xelr-1024x512.jpg",
-  category:"appliance",
-  subcategory:"television",
-  price:1779
-},
-{
-  id:17,
-  name:"Smart LED TV - 32",
-  image:"https://p.rmjo.in/moodShot/lhma5sga-1024x512.jpg",
-  category:"appliance",
-  subcategory:"television",
-  price:1079
-},
-{
-  id:18,
-  name:"LED TV - 40",
-  image:"https://p.rmjo.in/moodShot/kim05hbi-1024x512.jpg",
-  category:"appliance",
-  subcategory:"television",
-  price:1579
-},
-{
-  id:19,
-  name:"Single Door Fridge (210 Litre)",
-  image:"https://p.rmjo.in/moodShot/30d2mypn-1024x512.jpg",
-  category:"appliance",
-  subcategory:"refrigerators",
-  price:1579
-},
-{
-  id:20,
-  name:"Double Door Fridge (240 Litre)",
-  image:"https://p.rmjo.in/moodShot/a8ssqqst-1024x512.jpg",
-  category:"appliance",
-  subcategory:"refrigerators",
-  price:1389
-},
-{
-  id:21,
-  name:"Single Door Fridge (170 Litre)",
-  image:"https://p.rmjo.in/moodShot/3pqys4n0-1024x512.jpg",
-  category:"appliance",
-  subcategory:"refrigerators",
-  price:879
-},
+}
+
 
 ]
 

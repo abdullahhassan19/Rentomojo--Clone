@@ -61,26 +61,36 @@ const CardCarousel = () => {
     <CarouselProvider
       naturalSlideWidth={100}
       naturalSlideHeight={100}
-      totalSlides={data.length}
+      totalSlides={data.length-1}
       visibleSlides={2}
       step={1}
+      style={{ marginTop:"10px" }}
     >
-      <ButtonContainer>
+      <ButtonContainer style={{marginLeft:"-150px"}}>
         <TextCont>
-        <span style={{marginLeft:"-80px"}}>Over 1.5 lac</span>
+        <span >Over 1.5 lac</span>
         <br/>
-      <span  style={{marginLeft:"-33px"}}>happy subscribers</span>
-<br/>
-<br/>
+      <span  >happy subscribers</span>
+      <br/>
+      <br/>
+      <span >Here's what they have</span>
+      <br/> 
 
-Here's what they have<br/> <span style={{marginLeft:"-49px"}}>to say about their</span><br/> RentoMojo experience.
+      <span >to say about their</span>
+      <br/> 
+      <span >RentoMojo experience.</span>
+      
           </TextCont>
+        <div style={{display:"flex",
+        alignItems:"center",
+         }}>
         <BackButton>
           <FiChevronLeft size="1.5em" />
         </BackButton>
         <NextButton>
           <FiChevronRight size="1.5em" />
         </NextButton>
+        </div>
       </ButtonContainer>
       <SliderContainer>
         <StyledSlider classNameAnimation="animating">
@@ -90,11 +100,12 @@ Here's what they have<br/> <span style={{marginLeft:"-49px"}}>to say about their
               index={index}
               classNameHidden="hidden"
               classNameVisible="visible"
+              
             >
-              <Card>
-                <CardImage backgroundImage={item.src} />
+              <Card style={{marginLeft:"-200px" ,padding:"10px"}}>
+                <CardImage backgroundImage={item.src} style={{marginTop:"30px"}} />
                 <CardText>
-                  <h2 style={{marginTop:"-470px",marginLeft:"5px",fontSize:"14px",color:"grey",fontFamily:"sans-serif"}}>{item.title}</h2>
+                  <h2 style={{marginTop:"-400px",marginLeft:"120px",fontSize:"20px",color:"black",fontFamily:"sans-serif"}}>{item.title}</h2>
                   <p style={{marginTop:"90px",lineHeight:"25px",textAlign:"center",color:"gray",fontFamily:"sans-serif",fontSize:"14px"}}>{item.cardText}</p>
                 </CardText>
                 {/* <CardButton />

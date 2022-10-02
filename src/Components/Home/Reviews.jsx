@@ -99,21 +99,21 @@ const Reviews = () => {
           {/* <div>
           <Button2Container style ={{ position:"relative", left:"900px"}}>
             <Back2Button>
-              <FiChevronLeft size="1.5em" />
+              // <FiChevronLeft size="1.5em" />
             </Back2Button>
             <Next2Button>
               <FiChevronRight size="1.5em" />
             </Next2Button>
           </Button2Container>
         </div> */}
-          <Flex size="60px" marginTop={"20px"} width="150px">
+          {/* <Flex size="60px" marginTop={"20px"} width="150px"> */}
             {/* <Button onClick={() => slider?.slickPrev()}> */}
-            <AiOutlineLeftCircle size="50" color="grey" />
+            {/* <AiOutlineLeftCircle size="50" color="grey" /> */}
             {/* </Button> */}
             {/* <Button onClick={() => slider?.slickNext()}> */}
-            <AiOutlineRightCircle size="50" color="black" />
+            {/* <AiOutlineRightCircle size="50" color="black" /> */}
             {/* </Button> */}
-          </Flex>
+          {/* </Flex> */}
         </Box>
         <Box
           margin="40px 10px 10px 30px"
