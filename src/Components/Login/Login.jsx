@@ -150,7 +150,7 @@ import {
               md:'400px',
               lg:"500px",
               xl:"500px",
-              base :"300px"
+              base :"300px" 
              }} style={{
               backgroundColor: "#f5f7fa",
               borderRadius:"8px",
@@ -175,9 +175,6 @@ import {
              <InputLeftAddon children='+91' /> 
               <Input onChange={(e)=> setPhone(e.target.value)} type="number" style={{border: "none",textAlign:"left"}} maxLength="10"  variant='flushed' />
               </InputGroup>
-            
-                
-             
               </Box>
 
               <Box> <Box style={{backgroundColor:"white",marginTop:"5%",padding:"3%",borderRadius:"5px"}}>
