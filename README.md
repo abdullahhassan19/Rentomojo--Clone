@@ -3,7 +3,26 @@
 <h3>Rentomojo is a Website where user can rent the products like Furnitures, Electronics, Fitness and many more.</h3>
 <h2>Contributers</h2>
 <ul>
-<li>Abdullah Bin Hassan</li><li>Antara Burman</li><li>Sugam Kumar</li><li>Priyanka Soni</li>
+<a href="https://www.linkedin.com/in/abdullah-bin-hassan-936a17233/">
+<li>Abdullah Bin Hassan</li>
+</a>
+
+
+<a href="https://www.linkedin.com/in/abdullah-bin-hassan-936a17233/">
+<li>Antara Burman</li>
+</a><a href="https://www.linkedin.com/in/sugam-kumar-6b07041bb/">
+<li>Sugam Kumar</li>
+</a><a href="https://www.linkedin.com/in/priyankasoni04/">
+
+<li>Priyanka Soni</li>
+</a>
+
+
+
+
+
+
+
 </ul>
 
 
@@ -17,7 +36,6 @@
 
 
 </ul>
-
 
 
 <h2>Contributers</h2>
