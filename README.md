@@ -5,7 +5,7 @@
 <a href="https://www.linkedin.com/in/abdullah-bin-hassan-936a17233/">
 <li>Abdullah Bin Hassan</li>
 </a>
-<a href="https://www.linkedin.com/in/abdullah-bin-hassan-936a17233/">
+<a href="https://www.linkedin.com/in/antara-5aa95a209/">
 <li>Antara Burman</li>
 </a><a href="https://www.linkedin.com/in/sugam-kumar-6b07041bb/">
 <li>Sugam Kumar</li>
